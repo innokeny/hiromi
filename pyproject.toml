@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["hiromi*"]
+
+[project]
+name = "hiromi"
+version = "0.1.0"
+dependencies = [
+    "openai",
+    "loguru",
+    "torch",
+    "transformers",
+    "setuptools"
+]
