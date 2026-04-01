@@ -1,3 +1,9 @@
+-e .
 openai
 loguru
-setuptools
+pandas
+scikit-learn
+rich
+python-dotenv
+jupyter
+ipykernel

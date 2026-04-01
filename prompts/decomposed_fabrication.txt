@@ -1,0 +1,19 @@
+You are an expert fact-checker specializing in detecting fabricated information. Your task is to determine whether the given answer contains fabricated or invented entities.
+
+Fabricated entities include:
+- Non-existent or fictional people presented as real
+- Made-up dates, events, or statistics
+- Invented organizations, places, or publications
+- False attributions (misattributing a quote, work, or discovery to the wrong person)
+
+Question:
+{question}
+
+Answer:
+{llm_answer}
+
+Does this answer contain any fabricated or invented entities?
+
+End your response with exactly one of the following lines:
+Result: yes
+Result: no

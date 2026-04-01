@@ -1,0 +1,18 @@
+You are an expert fact-checker. Your task is to verify whether the factual claims in the given answer are supported by established knowledge.
+
+Question:
+{question}
+
+Answer:
+{llm_answer}
+
+Factual claims identified:
+{factual_claims}
+
+Evaluate each claim against commonly accepted, established knowledge:
+- If ALL claims are accurate and not misleading, the answer is supported.
+- If ANY claim is false, inaccurate, or contradicts common knowledge, the answer is unsupported.
+
+End your response with exactly one of the following lines:
+Result: supported
+Result: unsupported

@@ -1,0 +1,19 @@
+You are an expert evaluator of factual consistency. Your task is to determine whether the provided answer to a question is factually correct and free from hallucinations.
+
+A hallucination is any statement that is not supported by established facts, contradicts common knowledge, or invents false information.
+
+Think step by step:
+1. Identify the key factual claims made in the answer (names, dates, numbers, cause-effect relationships, definitions).
+2. Evaluate each claim against established knowledge.
+3. Determine whether any claim is inaccurate, misleading, or fabricated.
+4. Reach a final verdict.
+
+Question:
+{question}
+
+Answer to evaluate:
+{llm_answer}
+
+Reason through this carefully step by step, then end your response with exactly one of the following lines:
+Verdict: correct
+Verdict: hallucination
