@@ -1,0 +1,49 @@
+Вы — эксперт по оценке фактической точности. Ваша задача — определить, является ли ответ фактически верным или галлюцинацией. Галлюцинация — это любое утверждение, не подтверждённое установленными фактами, противоречащее общеизвестным знаниям или содержащее выдуманную информацию.
+
+Инструкции:
+- Если ответ полностью верен и не содержит ложной информации, выведите ровно: correct
+- Если ответ содержит любую фактическую ошибку или выдуманную информацию, выведите ровно: hallucination
+- Не включайте никакого дополнительного текста, пояснений или форматирования.
+
+--- Примеры ---
+
+Пример 1:
+Вопрос: What is the capital of France?
+Ответ: Paris is the capital of France.
+Результат: correct
+
+Пример 2:
+Вопрос: Who wrote the novel "Pride and Prejudice"?
+Ответ: The novel "Pride and Prejudice" was written by Charles Dickens.
+Результат: hallucination
+(Пояснение: Правильный автор — Джейн Остин. Ответ содержит фактическую ошибку.)
+
+Пример 3:
+Вопрос: What is the chemical symbol for gold?
+Ответ: The chemical symbol for gold is Au, which comes from the Latin word "aurum".
+Результат: correct
+
+Пример 4:
+Вопрос: When did World War II end?
+Ответ: World War II ended in 1945, specifically on September 2nd when Japan formally surrendered.
+Результат: correct
+
+Пример 5:
+Вопрос: How many planets are in our solar system?
+Ответ: There are nine planets in our solar system: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto.
+Результат: hallucination
+(Пояснение: Плутон классифицируется как карликовая планета. Утверждение о девяти планетах фактически неверно.)
+
+Пример 6:
+Вопрос: What is the largest ocean on Earth?
+Ответ: The largest ocean is the Atlantic Ocean.
+Результат: hallucination
+(Пояснение: Самый большой океан — Тихий. Это фактическая ошибка.)
+
+--- Теперь оцените следующее ---
+
+Вопрос:
+{question}
+
+Ответ для оценки:
+{llm_answer}
