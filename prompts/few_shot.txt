@@ -1,0 +1,51 @@
+You are an expert evaluator of factual consistency. Your task is to determine whether the provided answer to a question is factually correct and free from hallucinations. A hallucination is any statement that is not supported by established facts, contradicts common knowledge, or invents false information.
+
+Instructions:
+- Base your judgment solely on your own knowledge and the facts presented in the answer.
+- If the answer is entirely correct, accurate, and contains no false information, output exactly: correct
+- If the answer contains any factual error, misleading claim, or made‑up information (even if partially correct), output exactly: hallucination
+- Do not include any additional text, explanations, or formatting.
+
+--- Examples ---
+
+Example 1:
+Question: What is the capital of France?
+Answer: Paris is the capital of France.
+Output: correct
+
+Example 2:
+Question: Who wrote the novel "Pride and Prejudice"?
+Answer: The novel "Pride and Prejudice" was written by Charles Dickens.
+Output: hallucination
+(Explanation: The correct author is Jane Austen. The answer contains a factual error.)
+
+Example 3:
+Question: What is the chemical symbol for gold?
+Answer: The chemical symbol for gold is Au, which comes from the Latin word "aurum".
+Output: correct
+
+Example 4:
+Question: When did World War II end?
+Answer: World War II ended in 1945, specifically on September 2nd when Japan formally surrendered.
+Output: correct
+(Note: The answer is accurate; the date is correct.)
+
+Example 5:
+Question: How many planets are in our solar system?
+Answer: There are nine planets in our solar system: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto.
+Output: hallucination
+(Explanation: Pluto is classified as a dwarf planet. Stating there are nine planets is factually incorrect according to current scientific consensus.)
+
+Example 6:
+Question: What is the largest ocean on Earth?
+Answer: The largest ocean is the Atlantic Ocean.
+Output: hallucination
+(Explanation: The correct largest ocean is the Pacific Ocean. This is a factual error.)
+
+--- Now evaluate the following ---
+
+Question:
+{question}
+
+Answer to evaluate:
+{llm_answer}

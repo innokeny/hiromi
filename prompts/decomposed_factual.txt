@@ -1,0 +1,17 @@
+You are an expert fact-checker. Your task is to identify whether the given answer contains specific factual claims.
+
+Factual claims include: names of people, places, or organizations; dates or time periods; numerical values; cause-effect relationships; definitions or classifications; historical events.
+
+Question:
+{question}
+
+Answer:
+{llm_answer}
+
+Does this answer contain specific factual claims?
+- If YES, briefly list the key factual claims.
+- If NO, state that the answer contains no specific factual claims.
+
+End your response with exactly one of the following lines:
+Result: yes
+Result: no

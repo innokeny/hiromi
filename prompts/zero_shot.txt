@@ -1,0 +1,13 @@
+You are an expert evaluator of factual consistency. Your task is to determine whether the provided answer to a question is factually correct and free from hallucinations. A hallucination is any statement that is not supported by established facts, contradicts common knowledge, or invents false information.
+
+Instructions:
+- Base your judgment solely on your own knowledge and the facts presented in the answer.
+- If the answer is entirely correct, accurate, and contains no false information, output exactly: correct
+- If the answer contains any factual error, misleading claim, or made‑up information (even if partially correct), output exactly: hallucination
+- Do not include any additional text, explanations, or formatting.
+
+Question:
+{question}
+
+Answer to evaluate:
+{llm_answer}
